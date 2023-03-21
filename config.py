@@ -1,5 +1,5 @@
 # (©)Codexbotz
-# Recode by @XYZUZUX
+# Recode by @mrismanaziz
 # t.me/SharingUserbot & t.me/Lunatic0de
 
 import logging
@@ -11,22 +11,22 @@ from logging.handlers import RotatingFileHandler
 load_dotenv("config.env")
 
 # Bot token dari @Botfather
-TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "6041612915:AAHDVCzpiYJEWeppXOmNyKvoy_-qXHc1KS0")
+TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "6276424797:AAEREo4QhskIiaDAXBljYBqLfRBVA-f9bjg")
 
 # API ID Anda dari my.telegram.org
-APP_ID = int(os.environ.get("APP_ID", "12749571"))
+APP_ID = int(os.environ.get("APP_ID", "25948358"))
 
 # API Hash Anda dari my.telegram.org
-API_HASH = os.environ.get("API_HASH", "eaae2f49b39e76e832d4921e00c21d1a")
+API_HASH = os.environ.get("API_HASH", "b89b0b5b357d21d857bf3980476d5351")
 
 # ID Channel Database
-CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1001942557641"))
+CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1001909780275"))
 
 # NAMA OWNER
 OWNER = os.environ.get("OWNER", "XYZUZUX")
 
 # Protect Content
-PROTECT_CONTENT = strtobool(os.environ.get("PROTECT_CONTENT", "True"))
+PROTECT_CONTENT = strtobool(os.environ.get("PROTECT_CONTENT", "False"))
 
 # Heroku Credentials for updater.
 HEROKU_APP_NAME = os.environ.get("HEROKU_APP_NAME", None)
@@ -36,11 +36,11 @@ HEROKU_API_KEY = os.environ.get("HEROKU_API_KEY", None)
 UPSTREAM_BRANCH = os.environ.get("UPSTREAM_BRANCH", "master")
 
 # Database
-DB_URI = os.environ.get("DATABASE_URL", "postgres://jnujsium:JwRYDLWg6THZdE93f0dRJrjXgnzIq-O2@satao.db.elephantsql.com/jnujsium")
+DB_URI = os.environ.get("DATABASE_URL", "postgres://kjzkonyt:B6d8IcWQEhCI5COPxHSAO4zoX_HunG-k@trumpet.db.elephantsql.com/kjzkonyt")
 
 # ID dari Channel Atau Group Untuk Wajib Subscribenya
-FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1001790507197"))
-FORCE_SUB_GROUP = int(os.environ.get("FORCE_SUB_GROUP", "0"))
+FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1001635523712"))
+FORCE_SUB_GROUP = int(os.environ.get("FORCE_SUB_GROUP", "-1001885898271"))
 
 TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 
@@ -50,7 +50,7 @@ START_MSG = os.environ.get(
     "<b>Hello {first}</b>\n\n<b>Saya dapat menyimpan file pribadi di Channel Tertentu dan pengguna lain dapat mengaksesnya dari link khusus.</b>",
 )
 try:
-    ADMINS = [int(x) for x in (os.environ.get("ADMINS", "5178772086 5943200597 5437750170").split())]
+    ADMINS = [int(x) for x in (os.environ.get("ADMINS", "1786509342 5178772086").split())]
 except ValueError:
     raise Exception("Daftar Admin Anda tidak berisi User ID Telegram yang valid.")
 
